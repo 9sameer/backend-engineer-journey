@@ -18,3 +18,10 @@ Today's Topic:
 -Maven installation.
 -Questions
 None.
+Day Number
+-Topics Covered
+-Assignments Completed
+-Doubts Pending
+-Next Day Plan
+
+

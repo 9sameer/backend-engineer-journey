@@ -622,3 +622,14 @@ Object usage
 Reference lost
 Garbage Collection
 Memory freed
+
+==============================================
+Day 7 Major Learning Points (Save These) 
+Encapsulation protects the internal state of an object.
+Use private fields to prevent direct modification.
+Getters expose data in a controlled way.
+Setters should contain validation when required.
+Not every field should have a setter.
+Business behavior should be represented by methods (deposit(), withdraw(), buyPolicy()), not by exposing raw data.
+Encapsulation is about controlled access + validation + data integrity, not just hiding data.
+Good object design exposes behavior, not internal state.

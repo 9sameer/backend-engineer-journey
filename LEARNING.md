@@ -155,4 +155,15 @@ Parent constructor executes before the child constructor.
 super refers to the parent class portion of the current object.
 Inheritance reduces duplication, but its main purpose is proper modeling.
 IS-A → Inheritance.
-HAS-A → Composition (object contains another object).
+HAS-A → Composition (object contains another object
+
+===============================================================
+📒 Day 9 Major Learning Points (Save These)
+Polymorphism allows one common type to have multiple implementations.
+Method Overloading = Same class, different parameters, compile-time polymorphism.
+Method Overriding = Parent-child relationship, same method signature, runtime polymorphism.
+Runtime polymorphism uses the actual object, not the variable type.
+Parent p = new Child(); is valid because Child IS-A Parent.
+Child c = new Parent(); is invalid because every Parent is not a Child.
+Polymorphism promotes loose coupling and flexibility.
+Spring Boot uses polymorphism extensively through interfaces and dependency injection.

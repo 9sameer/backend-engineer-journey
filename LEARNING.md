@@ -167,3 +167,18 @@ Parent p = new Child(); is valid because Child IS-A Parent.
 Child c = new Parent(); is invalid because every Parent is not a Child.
 Polymorphism promotes loose coupling and flexibility.
 Spring Boot uses polymorphism extensively through interfaces and dependency injection.
+
+======================================================================================
+📒 Day 10 Major Learning Points (Save These)
+Abstraction hides implementation details while exposing essential behavior.
+Abstract classes define a common contract for child classes.
+Child classes provide the implementation of abstract methods.
+Abstract classes can have:
+Variables
+Constructors
+Concrete methods
+Abstract methods
+Abstract classes cannot be instantiated (no object creation).
+Encapsulation hides data.
+Abstraction hides implementation.
+Use abstraction when every child must provide its own implementation.

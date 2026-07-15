@@ -182,3 +182,23 @@ Abstract classes cannot be instantiated (no object creation).
 Encapsulation hides data.
 Abstraction hides implementation.
 Use abstraction when every child must provide its own implementation.
+
+📒 Abstract Class Inheritance Rules (Interview Trap!)
+* YES, any concrete (normal) child class MUST override and implement all abstract methods of its parent abstract class.
+* If the child class fails to implement them, Java will throw a Compile-Time Error.
+* This is NOT just an Interface rule—it applies to both Abstract Classes and Interfaces equally to maintain type safety and prevent runtime crashes.
+* The only exception is if the child class itself is declared as `abstract`.
+* 
+
+==================================================================
+# 📒 Day 11 Major Learning Points (Save These)
+
+- Interfaces define **contracts**, not implementations.
+- A class can implement multiple interfaces.
+- A class can extend only one class.
+- Interfaces promote **loose coupling**.
+- Spring Boot uses interfaces heavily for flexibility and dependency injection.
+- Interface methods are implemented by the implementing class.
+- Interfaces **cannot have constructors**.
+- Interface variables are implicitly `public static final` (constants).
+- Program to an **interface**, not to an implementation

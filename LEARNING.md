@@ -216,6 +216,13 @@ remove(Object) removes by value.
 Prefer List over ArrayList in declarations to achieve loose coupling.
 Program to an interface, not to an implementation.
 
+* `new ArrayList<>()` creates an empty array with an initial capacity of 0.
+* On the absolute first `add()` operation, the capacity instantly jumps to 10 (Default Capacity).
+* Resizing triggers ONLY when the array is 100% full and a new element tries to enter.
+* The growth factor is exactly 1.5x (Current Capacity + 50% of Current Capacity).
+* Internal Formula: `int newCapacity = oldCapacity + (oldCapacity >> 1);`
+* Resizing involves allocating a new larger array in Heap and performing a `System.arraycopy()` from the old array.
+* 
 - 📚 Notes (Save These)
 Collections manage groups of objects efficiently.
 ArrayList is dynamic and internally backed by an array.

@@ -202,3 +202,27 @@ Use abstraction when every child must provide its own implementation.
 - Interfaces **cannot have constructors**.
 - Interface variables are implicitly `public static final` (constants).
 - Program to an **interface**, not to an implementation
+
+- =======================================================================
+- 📒 Day 12 Major Learning Points
+- 
+Collections provide a framework to manage groups of objects.
+ArrayList is dynamic and internally backed by an array.
+ArrayList maintains insertion order.
+Duplicate values and null are allowed.
+Generics work only with reference types, not primitives.
+remove(int) removes by index.
+remove(Object) removes by value.
+Prefer List over ArrayList in declarations to achieve loose coupling.
+Program to an interface, not to an implementation.
+
+- 📚 Notes (Save These)
+Collections manage groups of objects efficiently.
+ArrayList is dynamic and internally backed by an array.
+ArrayList maintains insertion order.
+Duplicates and null values are allowed.
+Collections store objects, not primitives.
+Prefer programming to the List interface rather than the concrete ArrayList implementation.
+Map is part of the Collections Framework but does not extend the Collection interface.
+
+

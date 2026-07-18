@@ -232,4 +232,24 @@ Collections store objects, not primitives.
 Prefer programming to the List interface rather than the concrete ArrayList implementation.
 Map is part of the Collections Framework but does not extend the Collection interface.
 
+=======================================================================================
+- 📒 Day 13 Major Learning Points
+📌 Notes to Remember
+super
+super keyword hai.
+super() parent constructor call karta hai.
+First statement hona mandatory hai.
+this
+this current object ka reference hai.
+this() same class ke constructor ko call karta hai.
+this() aur super() ek hi constructor me saath use nahi kar sakte.
+@Override
+Optional annotation hai.
+Runtime behavior change nahi karta.
+Compile-time validation deta hai.
+Abstract Class
+Object nahi bana sakte.
+Abstract method ko concrete child implement karega.
+Agar child bhi abstract hai to implementation defer kar sakta hai.
+
 

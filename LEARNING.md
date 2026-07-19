@@ -251,5 +251,15 @@ Abstract Class
 Object nahi bana sakte.
 Abstract method ko concrete child implement karega.
 Agar child bhi abstract hai to implementation defer kar sakta hai.
+=====================================================
+- 📒 Day 14 Major Learning Points
+
+- 📌 Cheat Sheet
+Interface → Contract
+implements → Fulfills contract
+List → Interface
+ArrayList → Class
+Program to Interface → Loose Coupling
+Service Layer → Business Logic
 
 

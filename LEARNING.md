@@ -261,5 +261,47 @@ List → Interface
 ArrayList → Class
 Program to Interface → Loose Coupling
 Service Layer → Business Logic
+======================================================
+📒 Day 16 Major Learning Points (Save These)
 
+### 1. Equality Comparison: `==` vs `equals()`
+* `==` Operator:
+  * For Primitives: Compares actual **Values** (`10 == 10` ➔ `true`).
+  * For Objects: Compares **References / Memory Addresses** (`s1 == s2` ➔ `false` for separate heap allocations).
+* `equals()` Method:
+  * Compares **Logical Content / State** inside objects (e.g., comparing string characters).
+  * Cannot be called on primitives (Compile-Time Error).
+* String Comparison Rule:
+  * Yes, String *can* technically use `==`, but it checks reference equality (String Pool behavior), not content.
+  * **Always prefer `equals()` for String content comparison** in enterprise applications.
+
+### 2. Service Layer & Reusable Architecture
+* Returning `null`: Services return `null` to explicitly indicate that a requested entity/record was not found in memory/database.
+* Separation of Concerns:
+  * **Service Layer:** Strictly handles Business Logic & Data Retrieval. It should NEVER contain `System.out.println()`.
+  * **Main / Controller Layer:** Handles Presentation and UI rendering.
+* Reusability Reason: If a Service prints to the console directly, it cannot be reused by an Android App, Web Frontend, or REST API. Services must return raw data and let the presentation layer decide how to display it.
+
+### 3. Collection Search Iterations (Linear Search)
+* Searching in a List checks elements sequentially from index 0:
+  * Best/Mid Case: Loop terminates early as soon as the target ID is matched.
+  * Worst Case (Item at end or missing): Traverses all $N$ elements completely (e.g., searching for non-existent `P999` scans all 3 items).
+
+### 4. Method Signature Basics (Interview Trap)
+* `Return Type` vs `Returned Value`:
+  * `Policy findPolicyById(String id)` ➔ Return Type is the class/data type: **`Policy`**.
+  * `null` or a live object is the **value** being returned at runtime, NOT the return type itself.
+
+====================================================
+
+📌 Cheat Sheet
+Iterator  ----->  Forward traversal
+
+hasNext()  -----> Check
+
+next()  ----->  Move
+
+remove()  ----->  Safe delete
+
+for-each  ----->  Internally uses Iterator
 

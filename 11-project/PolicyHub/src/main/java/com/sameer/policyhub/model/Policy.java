@@ -34,6 +34,24 @@ public abstract class Policy {
         return coverageAmount;
     }
 
+
+//    public void setPolicyName(String policyName) {
+//        this.policyName = policyName;
+//    }
+
+//    public void setPremium(double premium) {
+//        this.premium = premium;
+//    }
+    public void setPremium(double premium) {
+
+        if (premium <= 0)  return;
+
+        this.premium = premium;
+    }
+//    public void setCoverageAmount(double coverageAmount) {
+//        this.coverageAmount = coverageAmount;
+//    }
+
     public abstract void calculatePremium();
 
     @Override

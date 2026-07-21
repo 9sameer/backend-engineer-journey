@@ -25,22 +25,28 @@ public class Main {
 //        System.out.println(policy);
 //        policy.calculatePremium();
 
-        Policy policy = service.findPolicyById("P101");
-        if (policy != null) {
-            System.out.println(policy);
-        } else {
-            System.out.println("Policy Not Found");
-        }
+        // Read or find by id
+//        Policy policy = service.findPolicyById("P101");
+//        if (policy != null) {
+//            System.out.println(policy);
+//        } else {
+//            System.out.println("Policy Not Found");
+//        }
 
+        //Delete
+//        boolean deleted = service.deletePolicyById("P101");
+//        if (deleted) {
+//            System.out.println("Policy Deleted");
+//        } else {
+//            System.out.println("Policy Not Found");
+//        }
+//        service.viewPolicies();
 
-        boolean deleted = service.deletePolicyById("P101");
-        if (deleted) {
-            System.out.println("Policy Deleted");
-        } else {
-            System.out.println("Policy Not Found");
-        }
+        //Update
+        boolean update = service.updatePremium("P101",1000);
+        if(update) System.out.println("Updated");
+        else System.out.println("Policy Not Found");
         service.viewPolicies();
-
 
 
     }

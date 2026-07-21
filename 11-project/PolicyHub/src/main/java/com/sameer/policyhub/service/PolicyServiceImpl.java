@@ -64,7 +64,12 @@ public class PolicyServiceImpl implements PolicyService {
 
     @Override
     public boolean updatePremium(String policyId, double newPremium){
-
+        for (Policy policy : policies) {
+            if (policy.getPolicyId().equals(policyId)) {
+                policy.setPremium(newPremium);
+                return true;
+            }
+        }
 
     return false;
     }

@@ -293,7 +293,7 @@ Service Layer → Business Logic
   * `null` or a live object is the **value** being returned at runtime, NOT the return type itself.
 
 ====================================================
-
+Day 17
 📌 Cheat Sheet
 Iterator  ----->  Forward traversal
 
@@ -305,3 +305,46 @@ remove()  ----->  Safe delete
 
 for-each  ----->  Internally uses Iterator
 
+=====================================================
+Day 18 
+Update Operation performed 
+
+===================================================\
+DAY 19 – Exception Handling (Part 1)
+
+📌 Cheat Sheet
+Exception
+
+↓
+
+Runtime problem
+
+try
+
+↓
+
+Risky code
+
+catch
+
+↓
+
+Handle problem
+
+finally
+
+↓
+
+Always executes
+
+e.getMessage()
+
+↓
+
+Short message
+
+e.printStackTrace()
+
+↓
+
+Full error details

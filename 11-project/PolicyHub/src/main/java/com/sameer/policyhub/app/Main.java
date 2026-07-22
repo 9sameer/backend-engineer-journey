@@ -1,5 +1,6 @@
 package com.sameer.policyhub.app;
 
+import com.sameer.policyhub.exception.InvalidPremiumException;
 import com.sameer.policyhub.model.CarPolicy;
 import com.sameer.policyhub.model.HealthPolicy;
 import com.sameer.policyhub.model.LifePolicy;
@@ -47,6 +48,14 @@ public class Main {
         if(update) System.out.println("Updated");
         else System.out.println("Policy Not Found");
         service.viewPolicies();
+
+        try {
+            service.updatePremium("P101", -5000);
+        }
+        catch (InvalidPremiumException e){
+            System.out.println(e.getMessage());
+        }
+
 
 
     }

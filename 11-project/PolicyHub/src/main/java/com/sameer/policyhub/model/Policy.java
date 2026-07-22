@@ -1,5 +1,7 @@
 package com.sameer.policyhub.model;
 
+import com.sameer.policyhub.exception.InvalidPremiumException;
+
 public abstract class Policy {
 
     private String policyId;
@@ -42,15 +44,28 @@ public abstract class Policy {
 //    public void setPremium(double premium) {
 //        this.premium = premium;
 //    }
-    public void setPremium(double premium) {
+//    public void setPremium(double premium) {
+//
+//        if (premium <= 0)  return;
+//
+//        this.premium = premium;
+//    }
 
-        if (premium <= 0)  return;
-
-        this.premium = premium;
+public void setPremium(double premium) {
+    if (premium <= 0) {
+        throw new InvalidPremiumException(
+                "Premium must be greater than zero."
+        );
     }
+    this.premium = premium;
+}
+
+
 //    public void setCoverageAmount(double coverageAmount) {
 //        this.coverageAmount = coverageAmount;
 //    }
+
+
 
     public abstract void calculatePremium();
 

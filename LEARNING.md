@@ -348,3 +348,40 @@ e.printStackTrace()
 ↓
 
 Full error details
+
+============================================================================
+DAY 20 – throw, throws, Checked vs Unchecked Exceptions + First Custom Exception
+📌 Cheat Sheet
+throw
+↓
+
+Actually throws
+
+throws
+↓
+
+Declares
+
+Checked
+
+↓
+
+Compiler
+
+Unchecked
+
+↓
+
+Runtime
+
+Custom Exception
+
+↓
+
+Business-specific
+
+RuntimeException
+
+↓
+
+Unchecked Exception
